@@ -5,7 +5,7 @@ public class LC704_BinarySearch {
  *            if (nums[i]==target){
  *               return i;
  *            }
- *        }
+ *         }
  */
 
         int left = 0;
