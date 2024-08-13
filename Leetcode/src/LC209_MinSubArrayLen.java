@@ -2,6 +2,7 @@ public class LC209_MinSubArrayLen {
     //给定一个数组nums和一个整数s
     //找出这个数组中 sum>=s的最短子数组，并返回这个子数组的长度
     //如果没有找到就返回0
+
     public static int minSubArrayLen(int[] nums,int target){
         int result=Integer.MAX_VALUE;//为了初始比较时，更小的一定是另一个值
         int left=0;
