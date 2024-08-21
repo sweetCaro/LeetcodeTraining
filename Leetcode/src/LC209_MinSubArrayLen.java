@@ -27,5 +27,6 @@ public class LC209_MinSubArrayLen {
         int target=11;
         int result=minSubArrayLen(nums,target);
         System.out.println(result);
+
     }
 }
