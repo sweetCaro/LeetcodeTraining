@@ -21,6 +21,12 @@ public class LC203_RemoveLinkedListElements {
             }
         }
         return dummy.next;
+        //不要写成return head
+        //因为dummy之后的节点会在while循环中由current进行移动删除操作
+        //意味着dummy.next是随时更新的全新头节点
+        //而head还是指向原来的旧头节点
+        //即：如果头节点没有被删除过，那return head不会有问题
+        //如果头节点的值==val，要被移除，那return head就会有问题
     }
 
     public static void main(String[] args) {
