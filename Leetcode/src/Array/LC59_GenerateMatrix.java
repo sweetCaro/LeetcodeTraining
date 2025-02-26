@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.Arrays;
 
 public class LC59_GenerateMatrix {

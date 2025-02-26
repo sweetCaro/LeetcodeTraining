@@ -1,3 +1,5 @@
+package Array;
+
 public class LC209_MinSubArrayLen {
     /** 最短子数组长度*/
     //给定一个数组nums和一个整数s

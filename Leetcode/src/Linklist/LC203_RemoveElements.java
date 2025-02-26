@@ -1,4 +1,6 @@
-public class LC203_RemoveLinkedListElements {
+package Linklist;
+
+public class LC203_RemoveElements {
     public static class ListNode {
 
         int val;
@@ -9,6 +11,9 @@ public class LC203_RemoveLinkedListElements {
     }
     public static ListNode removeElements(ListNode head, int val) {
         // 设置一个虚拟的头结点
+        // 为什么要设置一个虚拟头节点，因为链表中的每个“当前”节点，只能对下一个节点进行删除操作，不能自己删除自己
+        // 所以如果头节点的value是val，在没有虚拟头节点的情况下无法自己删除自己
+        // 同样的，在判断是否等于val时，也是判断当前节点的下一个节点的value是不是val，而不是看自己的value是不是val，因为自己不能删除自己
         ListNode dummy = new ListNode();
         dummy.next = head;
 
@@ -33,7 +38,7 @@ public class LC203_RemoveLinkedListElements {
         int[] numbers = {1, 2, 6, 3, 4, 5, 6};
 
         ListNode head = new ListNode(numbers[0]);
-        ListNode current = head;
+        ListNode current = head;//当前节点
         for (int i = 1; i < numbers.length; i++) {
 
             current.next = new ListNode(numbers[i]);

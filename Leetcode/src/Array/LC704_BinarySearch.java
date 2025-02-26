@@ -1,3 +1,5 @@
+package Array;
+
 public class LC704_BinarySearch {
     public static int search(int[] nums, int target){
 /**      空间复杂度=O(n)的暴力解法

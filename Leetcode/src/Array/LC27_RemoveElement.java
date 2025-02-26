@@ -1,3 +1,5 @@
+package Array;
+
 import static java.util.Arrays.sort;
 
 public class LC27_RemoveElement {
